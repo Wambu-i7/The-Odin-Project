@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Practice</title>
+  <style>
+    .container{
+      border: 2px solid black;
+      height: 200px;
+      margin: 20px;
+      display: flex;
+    }
+    .box {
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      padding: 20px;
+      margin: 5px;
+      flex: 2 1 0;
+    }
+    .left {
+        flex: 1;
+        
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        
+    }
+
+    .left .box:nth-child(1) {
+    background: lightcoral; /* Box 1 */
+    height: 150px;
+    }
+
+    .right .box:nth-child(1) {
+    background: lightgreen; /* Box 2 */
+    }
+
+    .right .box:nth-child(2) {
+    background: rgb(55, 7, 230);  /* Box 3 */
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+        <div class="box">1</div>
+    </div>
+    <div class="right">
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+  </div>
+</body>
+</html>
